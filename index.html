@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clínica ARUC | Salud Mental Integral</title>
+  <meta name="description" content="Clínica ARUC. Atención psicológica profesional, humana y personalizada en Toluca y en línea. Agenda tu cita.">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Encabezado fijo -->
+  <header class="header">
+    <div class="container header-flex">
+      <div class="logo">
+        <img src="logo-aruc.png" alt="Logo Clínica ARUC" height="48" />
+        <span>Clínica ARUC</span>
+      </div>
+      <nav class="nav" id="mainNav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#mision">Misión y Visión</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Imagen principal -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <div class="hero-img">
+        <img src="hero-consultorio.jpg" alt="Espacio terapéutico cálido" />
+      </div>
+      <div class="hero-text">
+        <h1>Un espacio para reconectar contigo</h1>
+        <p>Lic. Alberto Ángeles – Director General<br>
+        Especialista en salud mental con más de una década de experiencia.</p>
+        <a href="#agenda" class="btn btn-primary">Agenda tu cita</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Misión y Visión -->
+  <section class="section" id="mision">
+    <div class="container section-flex">
+      <div class="section-text">
+        <h2>Misión y Visión</h2>
+        <h3>Misión</h3>
+        <p>
+          Promover el bienestar psicológico y emocional mediante intervenciones éticas, empáticas y fundamentadas en enfoques humanistas, psicoanalíticos y cognitivo-conductuales. Brindamos un espacio terapéutico seguro y enriquecedor.
+        </p>
+        <h3>Visión</h3>
+        <p>
+          Ser una institución referente en salud mental en México, reconocida por la excelencia profesional, la calidez humana y la innovación en servicios terapéuticos que impactan positivamente en la vida de las personas y sus relaciones.
+        </p>
+      </div>
+      <div class="section-img">
+        <img src="conexion-humana.jpg" alt="Ilustración de conexión humana" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Servicios -->
+  <section class="section bg-light" id="servicios">
+    <div class="container">
+      <h2>Servicios</h2>
+      <div class="servicios-cards">
+        <div class="servicio-card">
+          <i class="fas fa-user"></i>
+          <h4>Terapia individual</h4>
+        </div>
+        <div class="servicio-card">
+          <i class="fas fa-users"></i>
+          <h4>Terapia familiar</h4>
+        </div>
+        <div class="servicio-card">
+          <i class="fas fa-heart"></i>
+          <h4>Terapia de pareja</h4>
+        </div>
+        <div class="servicio-card">
+          <i class="fas fa-child"></i>
+          <h4>Atención a niños</h4>
+        </div>
+        <div class="servicio-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h4>Orientación vocacional</h4>
+        </div>
+        <div class="servicio-card">
+          <i class="fas fa-desktop"></i>
+          <h4>Presencial y online</h4>
+        </div>
+      </div>
+      <div class="servicios-list">
+        <h3>¿A quién atendemos?</h3>
+        <ul>
+          <li>👶 Niños</li>
+          <li>🧒 Adolescentes</li>
+          <li>🧑 Adultos</li>
+          <li>👴 Adultos mayores</li>
+          <li>👨‍👩‍👧‍👦 Familias y parejas</li>
+        </ul>
+        <h3>Problemas que atendemos</h3>
+        <ul>
+          <li>Ansiedad, Estrés, Depresión, Duelo, Bullying, Orientación vocacional, Insomnio</li>
+        </ul>
+        <h3>Enfoques terapéuticos</h3>
+        <ul>
+          <li><b>Humanismo:</b> empatía, autenticidad y crecimiento personal</li>
+          <li><b>Terapia Cognitivo-Conductual:</b> cambio de pensamientos y conductas disfuncionales</li>
+          <li><b>Psicoanálisis:</b> exploración profunda del inconsciente</li>
+        </ul>
+      </div>
+      <div class="servicios-img">
+        <img src="terapia-simbolica.jpg" alt="Sesión simbólica terapéutica" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Agenda tu cita -->
+  <section class="section" id="agenda">
+    <div class="container section-flex">
+      <div class="section-text">
+        <h2>Agenda tu cita</h2>
+        <p>
+          Agenda tu sesión de manera fácil y rápida. Elige el horario que más te convenga, modalidad (presencial o en línea), y recibe confirmación automática en tu correo.
+        </p>
+        <a href="https://calendly.com/tu_usuario/consulta" 
+           class="btn btn-primary" target="_blank">Agendar mi cita ahora</a>
+        <p style="margin-top:1em; color:#1A4C7D;"><b>¿Dudas o problemas para agendar?</b><br>
+          Escríbenos directamente por WhatsApp: 
+          <a href="https://wa.me/527226540066" target="_blank">+52 722 654 0066</a>
+        </p>
+      </div>
+      <div class="section-img">
+        <img src="agenda-persona.jpg" alt="Persona agendando cita" />
+      </div>
+    </div>
+    <!-- Ejemplo de incrustar Calendly como iframe (opcional, puedes quitar si prefieres solo el botón) -->
+    <!--
+    <div class="container">
+      <div class="calendly-inline-widget" data-url="https://calendly.com/tu_usuario/consulta" style="min-width:320px;height:650px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </div>
+    -->
+  </section>
+
+  <!-- Sección Contacto -->
+  <section class="section bg-light" id="contacto">
+    <div class="container section-flex">
+      <div class="section-text">
+        <h2>Contacto</h2>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:alberto.angeles.g@gmail.com">alberto.angeles.g@gmail.com</a></p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:mi.espacio.analitico@gmail.com">mi.espacio.analitico@gmail.com</a></p>
+        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/527226540066" target="_blank">+52 722 654 0066</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> <b>Miguel Salinas 305, Col. Altamirano, Toluca</b>
+          <br><a href="https://maps.app.goo.gl/bHS9WNak2Z26HQzL7" target="_blank">Ver en Google Maps</a>
+        </p>
+        <p><i class="fas fa-map-marker-alt"></i> <b>Avenida Pino Suárez #80, entre Morelos y Josefa Ortiz</b>
+          <br><a href="https://www.google.com/maps?q=19.2846881,-99.6211001&z=17&hl=es" target="_blank">Ver en Google Maps</a>
+        </p>
+        <p><i class="fab fa-facebook-square"></i> <a href="https://www.facebook.com/profile.php?id=100086022831324" target="_blank">Nuestra página en Facebook</a></p>
+      </div>
+      <div class="section-img">
+        <iframe src="https://www.google.com/maps?q=19.2846881,-99.6211001&z=17&output=embed" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+    <div class="contact-cta">
+      <a href="mailto:mi.espacio.analitico@gmail.com" class="btn btn-secondary">Envíanos un mensaje</a>
+      <a href="https://wa.me/527226540066" class="btn btn-primary" target="_blank">Llama o agenda por WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/527226540066" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container footer-flex">
+      <div>
+        <small>🧾 Cédula profesional | <a href="#">Términos de privacidad</a></small>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/profile.php?id=100086022831324" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Menú colapsable para móviles
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+    navToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
