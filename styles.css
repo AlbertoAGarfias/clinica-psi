@@ -49,6 +49,31 @@ body {
 .nav-toggle {
   display: none; background: none; border: none; color: var(--blanco); font-size: 1.7em;
 }
+.menu-btn-equipo {
+  background: var(--verde-salvia);
+  color: var(--azul-profundo) !important;
+  border-radius: 22px;
+  padding: 0.5em 1.2em;
+  font-weight: bold;
+  margin-left: 0.8em;
+  transition: background .22s, color .22s;
+  border: none;
+  font-family: var(--fuente-texto);
+}
+.menu-btn-equipo:hover, .menu-btn-equipo.active {
+  background: var(--azul-profundo);
+  color: var(--blanco) !important;
+}
+
+/* Responsive: el botón también se verá bien en menú móvil */
+@media (max-width: 900px) {
+  .menu-btn-equipo {
+    margin-left: 0;
+    margin-top: 0.7em;
+    width: 100%;
+    text-align: center;
+  }
+}
 @media (max-width: 900px) {
   .header-flex { flex-wrap: wrap; }
   .nav ul { flex-direction: column; gap: 0.5em; background: var(--azul-profundo); }
