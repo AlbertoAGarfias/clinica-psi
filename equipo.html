@@ -3,83 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Forma parte de nuestro equipo | Clínica ARUC</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <title>Únete a nuestro equipo | Clínica ARUC</title>
+  <meta name="description" content="Forma parte de la plantilla de trabajo de Clínica ARUC. Buscamos profesionales de la salud mental comprometidos.">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <!-- Iconos (Font Awesome) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Encabezado fijo -->
-  <header>
-    <div class="container header-content">
+  <header class="header fade-in">
+    <div class="container header-flex">
       <div class="logo">
-        <a href="index.html"><img src="logo-aruc.png" alt="Logo Clínica ARUC" height="50"></a>
+        <img src="logo-aruc.png" alt="Logo Clínica ARUC" height="48" />
+        <span>Clínica ARUC</span>
       </div>
-      <nav id="navbar">
+      <nav class="nav" id="mainNav">
         <ul>
-          <li><a href="index.html#inicio">Inicio</a></li>
-          <li><a href="index.html#mision-vision">Misión y Visión</a></li>
-          <li><a href="index.html#servicios">Servicios</a></li>
-          <li><a href="index.html#agenda">Agenda</a></li>
-          <li><a href="index.html#contacto">Contacto</a></li>
-          <li><a href="equipo.html" class="active menu-btn-equipo">Forma parte de nuestro equipo</a></li>
+          <li><a href="index.html#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="index.html#mision" class="nav-link">Misión y Visión</a></li>
+          <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="index.html#agenda" class="nav-link">Agenda</a></li>
+          <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+          <li>
+            <a href="equipo.html" class="btn-equipo nav-link" title="Únete a nuestro equipo">
+              <i class="fas fa-user-plus"></i> Únete a nuestro equipo
+            </a>
+          </li>
         </ul>
-        <button id="menu-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
       </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
   </header>
 
-  <!-- Sección: Forma parte de nuestro equipo -->
-  <main class="team-section" id="equipo">
-    <div class="container team-flex">
-      <div class="team-info">
-        <h2>Forma parte de nuestro equipo</h2>
-        <p>
-          Si eres profesional de la salud mental y estás buscando ser parte de la Fundación ARUC, completa el siguiente formulario y nos pondremos en contacto contigo.
-        </p>
+  <main>
+    <section class="section equipo-invita fade-in" id="equipo">
+      <div class="container section-flex equipo-mensaje">
+        <div class="section-text">
+          <h2>¿Eres profesional de la salud mental?</h2>
+          <p>
+            Súmate a la plantilla de trabajo de Clínica ARUC. Buscamos psicólogos, terapeutas y especialistas comprometidos con el bienestar emocional y el crecimiento humano.<br>
+            Si deseas integrarte a nuestro equipo, llena el siguiente formulario y nos pondremos en contacto contigo:
+          </p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe67jC87OWKpiGkDWc0A-mPgbfjGdvb5nJY_nZ1iBPeN0wFUg/viewform?usp=header"
+             class="btn btn-equipo btn-animate"
+             target="_blank">
+            <i class="fas fa-user-plus"></i> Ir al formulario
+          </a>
+        </div>
+        <div class="section-img" style="text-align:center;">
+          <img src="equipo-aruc.jpg" alt="Equipo profesional de salud mental" class="img-animate" style="max-width:300px; border-radius:1em; box-shadow:0 2px 8px rgba(26,76,125,.09);" />
+        </div>
       </div>
-      <div class="team-form-visual">
-        <!-- Formulario Google Forms incrustado -->
-        <iframe 
-          src="https://forms.gle/N8KGXZkVjKhTuWaT8" 
-          width="100%" 
-          height="700" 
-          frameborder="0" 
-          marginheight="0" 
-          marginwidth="0"
-          title="Formulario para profesionales de la salud mental">
-          Cargando…
-        </iframe>
-        <!-- Si solo quieres redireccionar, puedes usar este botón en vez del iframe:
-        <a href="https://forms.gle/YG7UPTMEQYPkwasx9" target="_blank" class="cta-btn" style="margin-top:2em;">Ir al formulario</a>
-        -->
-      </div>
-    </div>
+    </section>
   </main>
 
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/527226540066" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <!-- Botón scroll to top -->
+  <button id="toTopBtn" aria-label="Ir arriba" title="Volver arriba"><i class="fas fa-arrow-up"></i></button>
 
-  <!-- Pie de página -->
-  <footer>
-    <div class="container footer-content">
+  <footer class="footer fade-in">
+    <div class="container footer-flex">
       <div>
-        <span>🧾 Cédula profesional | <a href="#">Términos de privacidad</a></span>
+        <small>🧾 Cédula profesional | <a href="#">Términos de privacidad</a></small>
       </div>
       <div>
-        <a href="https://www.facebook.com/profile.php?id=100086022831324" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100086022831324" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
       </div>
     </div>
   </footer>
-
   <script>
     // Menú colapsable para móviles
-    const menuToggle = document.getElementById('menu-toggle');
-    const navbar = document.getElementById('navbar').querySelector('ul');
-    menuToggle.addEventListener('click', () => {
-      navbar.classList.toggle('active');
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+    navToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('open');
+    });
+
+    // Animación de fade-in al hacer scroll
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top < window.innerHeight - 80
+      );
+    }
+    document.addEventListener('scroll', () => {
+      document.querySelectorAll('.fade-in').forEach(el => {
+        if (isInViewport(el)) el.classList.add('visible');
+      });
+      document.querySelectorAll('.img-animate').forEach(el => {
+        if (isInViewport(el)) el.classList.add('img-visible');
+      });
+    });
+
+    // Efecto de subrayado animado en el nav
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('mouseenter', () => link.classList.add('underline'));
+      link.addEventListener('mouseleave', () => link.classList.remove('underline'));
+    });
+
+    // Scroll to top
+    const toTopBtn = document.getElementById('toTopBtn');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 250) {
+        toTopBtn.style.display = 'block';
+      } else {
+        toTopBtn.style.display = 'none';
+      }
+    });
+    toTopBtn.addEventListener('click', () => {
+      window.scrollTo({top: 0, behavior: "smooth"});
     });
   </script>
 </body>
