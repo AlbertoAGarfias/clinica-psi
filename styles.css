@@ -52,12 +52,35 @@ body {
   display: none; background: none; border: none; color: var(--blanco); font-size: 1.7em;
 }
 
+/* Botón especial en el menú para "Forma parte de nuestro equipo" */
+.menu-btn-equipo {
+  background: var(--verde-salvia);
+  color: var(--azul-profundo) !important;
+  border-radius: 22px;
+  padding: 0.5em 1.2em;
+  font-weight: bold;
+  margin-left: 0.8em;
+  transition: background .22s, color .22s;
+  border: none;
+  font-family: inherit;
+}
+.menu-btn-equipo:hover, .menu-btn-equipo.active {
+  background: var(--azul-profundo);
+  color: var(--blanco) !important;
+}
+
 @media (max-width: 900px) {
   .header-flex { flex-wrap: wrap; }
   .nav ul { flex-direction: column; gap: 0.5em; background: var(--azul-profundo); }
   .nav { display: none; position: absolute; top: 60px; right: 1em; min-width: 170px; border-radius: 6px; box-shadow: var(--sombra); }
   .nav.open { display: block; }
   .nav-toggle { display: block; }
+  .menu-btn-equipo {
+    margin-left: 0;
+    margin-top: 0.7em;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .hero {
