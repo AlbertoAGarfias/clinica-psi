@@ -14,7 +14,7 @@
 </head>
 <body>
   <!-- Encabezado fijo -->
-  <header class="header">
+  <header class="header fade-in">
     <div class="container header-flex">
       <div class="logo">
         <img src="logo-aruc.png" alt="Logo Clínica ARUC" height="48" />
@@ -22,17 +22,14 @@
       </div>
       <nav class="nav" id="mainNav">
         <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#mision">Misión y Visión</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#agenda">Agenda</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#mision" class="nav-link">Misión y Visión</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#agenda" class="nav-link">Agenda</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
           <li>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe67jC87OWKpiGkDWc0A-mPgbfjGdvb5nJY_nZ1iBPeN0wFUg/viewform?usp=header"
-               class="btn-equipo"
-               target="_blank"
-               title="Forma parte de nuestro equipo">
-              <i class="fas fa-user-plus"></i> Forma parte de nuestro equipo
+            <a href="equipo.html" class="btn-equipo nav-link" title="Únete a nuestro equipo" target="_blank">
+              <i class="fas fa-user-plus"></i> Únete a nuestro equipo
             </a>
           </li>
         </ul>
@@ -44,43 +41,22 @@
   </header>
 
   <!-- Imagen principal -->
-  <section class="hero" id="inicio">
+  <section class="hero fade-in" id="inicio">
     <div class="hero-content">
       <div class="hero-img">
-        <img src="hero-consultorio.jpg" alt="Espacio terapéutico cálido" />
+        <img src="hero-consultorio.jpg" alt="Espacio terapéutico cálido" class="img-animate"/>
       </div>
       <div class="hero-text">
         <h1>Un espacio para reconectar contigo</h1>
         <p>Lic. Alberto Ángeles – Director General<br>
         Especialista en salud mental con más de una década de experiencia.</p>
-        <a href="#agenda" class="btn btn-primary">Agenda tu cita</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Nueva sección para invitar a profesionales -->
-  <section class="section equipo-invita">
-    <div class="container section-flex equipo-mensaje">
-      <div class="section-text">
-        <h2>¿Eres profesional de la salud mental?</h2>
-        <p>
-          Súmate a la plantilla de trabajo de Clínica ARUC. Buscamos psicólogos, terapeutas y especialistas comprometidos con el bienestar emocional y el crecimiento humano.
-          <br>Si deseas integrarte a nuestro equipo, llena el siguiente formulario y nos pondremos en contacto contigo:
-        </p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe67jC87OWKpiGkDWc0A-mPgbfjGdvb5nJY_nZ1iBPeN0wFUg/viewform?usp=header"
-           class="btn btn-equipo"
-           target="_blank">
-          <i class="fas fa-user-plus"></i> Forma parte de nuestro equipo
-        </a>
-      </div>
-      <div class="section-img" style="text-align:center;">
-        <img src="equipo-aruc.jpg" alt="Equipo profesional de salud mental" style="max-width:300px; border-radius:1em; box-shadow:0 2px 8px rgba(26,76,125,.09);" />
+        <a href="#agenda" class="btn btn-primary btn-animate">Agenda tu cita</a>
       </div>
     </div>
   </section>
 
   <!-- Sección Misión y Visión -->
-  <section class="section" id="mision">
+  <section class="section fade-in" id="mision">
     <div class="container section-flex">
       <div class="section-text">
         <h2>Misión y Visión</h2>
@@ -94,37 +70,37 @@
         </p>
       </div>
       <div class="section-img">
-        <img src="conexion-humana.jpg" alt="Ilustración de conexión humana" />
+        <img src="conexion-humana.jpg" alt="Ilustración de conexión humana" class="img-animate"/>
       </div>
     </div>
   </section>
 
   <!-- Sección Servicios -->
-  <section class="section bg-light" id="servicios">
+  <section class="section bg-light fade-in" id="servicios">
     <div class="container">
       <h2>Servicios</h2>
       <div class="servicios-cards">
-        <div class="servicio-card">
+        <div class="servicio-card card-animate">
           <i class="fas fa-user"></i>
           <h4>Terapia individual</h4>
         </div>
-        <div class="servicio-card">
+        <div class="servicio-card card-animate">
           <i class="fas fa-users"></i>
           <h4>Terapia familiar</h4>
         </div>
-        <div class="servicio-card">
+        <div class="servicio-card card-animate">
           <i class="fas fa-heart"></i>
           <h4>Terapia de pareja</h4>
         </div>
-        <div class="servicio-card">
+        <div class="servicio-card card-animate">
           <i class="fas fa-child"></i>
           <h4>Atención a niños</h4>
         </div>
-        <div class="servicio-card">
+        <div class="servicio-card card-animate">
           <i class="fas fa-graduation-cap"></i>
           <h4>Orientación vocacional</h4>
         </div>
-        <div class="servicio-card">
+        <div class="servicio-card card-animate">
           <i class="fas fa-desktop"></i>
           <h4>Presencial y online</h4>
         </div>
@@ -150,13 +126,13 @@
         </ul>
       </div>
       <div class="servicios-img">
-        <img src="terapia-simbolica.jpg" alt="Sesión simbólica terapéutica" />
+        <img src="terapia-simbolica.jpg" alt="Sesión simbólica terapéutica" class="img-animate"/>
       </div>
     </div>
   </section>
 
   <!-- Sección Agenda tu cita -->
-  <section class="section" id="agenda">
+  <section class="section fade-in" id="agenda">
     <div class="container section-flex">
       <div class="section-text">
         <h2>Agenda tu cita</h2>
@@ -164,27 +140,20 @@
           Agenda tu sesión de manera fácil y rápida. Elige el horario que más te convenga, modalidad (presencial o en línea), y recibe confirmación automática en tu correo.
         </p>
         <a href="https://calendly.com/tu_usuario/consulta" 
-           class="btn btn-primary" target="_blank">Agendar mi cita ahora</a>
+           class="btn btn-primary btn-animate" target="_blank">Agendar mi cita ahora</a>
         <p style="margin-top:1em; color:#1A4C7D;"><b>¿Dudas o problemas para agendar?</b><br>
           Escríbenos directamente por WhatsApp: 
           <a href="https://wa.me/527226540066" target="_blank">+52 722 654 0066</a>
         </p>
       </div>
       <div class="section-img">
-        <img src="agenda-persona.jpg" alt="Persona agendando cita" />
+        <img src="agenda-persona.jpg" alt="Persona agendando cita" class="img-animate"/>
       </div>
     </div>
-    <!-- Ejemplo de incrustar Calendly como iframe (opcional, puedes quitar si prefieres solo el botón) -->
-    <!--
-    <div class="container">
-      <div class="calendly-inline-widget" data-url="https://calendly.com/tu_usuario/consulta" style="min-width:320px;height:650px;"></div>
-      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-    </div>
-    -->
   </section>
 
   <!-- Sección Contacto -->
-  <section class="section bg-light" id="contacto">
+  <section class="section bg-light fade-in" id="contacto">
     <div class="container section-flex">
       <div class="section-text">
         <h2>Contacto</h2>
@@ -204,8 +173,8 @@
       </div>
     </div>
     <div class="contact-cta">
-      <a href="mailto:mi.espacio.analitico@gmail.com" class="btn btn-secondary">Envíanos un mensaje</a>
-      <a href="https://wa.me/527226540066" class="btn btn-primary" target="_blank">Llama o agenda por WhatsApp</a>
+      <a href="mailto:mi.espacio.analitico@gmail.com" class="btn btn-secondary btn-animate">Envíanos un mensaje</a>
+      <a href="https://wa.me/527226540066" class="btn btn-primary btn-animate" target="_blank">Llama o agenda por WhatsApp</a>
     </div>
   </section>
 
@@ -213,9 +182,11 @@
   <a href="https://wa.me/527226540066" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
+  <!-- Botón scroll to top -->
+  <button id="toTopBtn" aria-label="Ir arriba" title="Volver arriba"><i class="fas fa-arrow-up"></i></button>
 
   <!-- Pie de página -->
-  <footer class="footer">
+  <footer class="footer fade-in">
     <div class="container footer-flex">
       <div>
         <small>🧾 Cédula profesional | <a href="#">Términos de privacidad</a></small>
@@ -232,6 +203,44 @@
     const mainNav = document.getElementById('mainNav');
     navToggle.addEventListener('click', () => {
       mainNav.classList.toggle('open');
+    });
+
+    // Animación de fade-in al hacer scroll
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top < window.innerHeight - 80
+      );
+    }
+    document.addEventListener('scroll', () => {
+      document.querySelectorAll('.fade-in').forEach(el => {
+        if (isInViewport(el)) el.classList.add('visible');
+      });
+      document.querySelectorAll('.img-animate').forEach(el => {
+        if (isInViewport(el)) el.classList.add('img-visible');
+      });
+      document.querySelectorAll('.card-animate').forEach(el => {
+        if (isInViewport(el)) el.classList.add('card-visible');
+      });
+    });
+
+    // Efecto de subrayado animado en el nav
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('mouseenter', () => link.classList.add('underline'));
+      link.addEventListener('mouseleave', () => link.classList.remove('underline'));
+    });
+
+    // Scroll to top
+    const toTopBtn = document.getElementById('toTopBtn');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 250) {
+        toTopBtn.style.display = 'block';
+      } else {
+        toTopBtn.style.display = 'none';
+      }
+    });
+    toTopBtn.addEventListener('click', () => {
+      window.scrollTo({top: 0, behavior: "smooth"});
     });
   </script>
 </body>
