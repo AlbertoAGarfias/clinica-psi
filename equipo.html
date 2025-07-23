@@ -12,21 +12,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header class="header fade-in">
+  <header class="header">
     <div class="container header-flex">
       <div class="logo">
-        <img src="Captura de pantalla 2025-07-22 141023.png" alt="Logo Clínica ARUC" height="48" />
+        <img src="logo-aruc.png" alt="Logo Clínica ARUC" height="48" />
         <span>Clínica ARUC</span>
       </div>
       <nav class="nav" id="mainNav">
         <ul>
-          <li><a href="index.html#inicio" class="nav-link">Inicio</a></li>
-          <li><a href="index.html#mision" class="nav-link">Misión y Visión</a></li>
-          <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
-          <li><a href="index.html#agenda" class="nav-link">Agenda</a></li>
-          <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="index.html#mision">Misión y Visión</a></li>
+          <li><a href="index.html#servicios">Servicios</a></li>
+          <li><a href="index.html#agenda">Agenda</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
           <li>
-            <a href="equipo.html" class="btn-equipo nav-link" title="Únete a nuestro equipo">
+            <a href="equipo.html" class="btn-equipo" title="Únete a nuestro equipo">
               <i class="fas fa-user-plus"></i> Únete a nuestro equipo
             </a>
           </li>
@@ -39,7 +39,7 @@
   </header>
 
   <main>
-    <section class="section equipo-invita fade-in" id="equipo">
+    <section class="section equipo-invita" id="equipo">
       <div class="container section-flex equipo-mensaje">
         <div class="section-text">
           <h2>¿Eres profesional de la salud mental?</h2>
@@ -48,22 +48,19 @@
             Si deseas integrarte a nuestro equipo, llena el siguiente formulario y nos pondremos en contacto contigo:
           </p>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSe67jC87OWKpiGkDWc0A-mPgbfjGdvb5nJY_nZ1iBPeN0wFUg/viewform?usp=header"
-             class="btn btn-equipo btn-animate"
+             class="btn btn-equipo"
              target="_blank">
             <i class="fas fa-user-plus"></i> Ir al formulario
           </a>
         </div>
         <div class="section-img" style="text-align:center;">
-          <img src="equipo-aruc.jpg" alt="Equipo profesional de salud mental" class="img-animate" style="max-width:300px; border-radius:1em; box-shadow:0 2px 8px rgba(26,76,125,.09);" />
+          <img src="equipo-aruc.jpg" alt="Equipo profesional de salud mental" style="max-width:300px; border-radius:1em; box-shadow:0 2px 8px rgba(26,76,125,.09);" />
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Botón scroll to top -->
-  <button id="toTopBtn" aria-label="Ir arriba" title="Volver arriba"><i class="fas fa-arrow-up"></i></button>
-
-  <footer class="footer fade-in">
+  <footer class="footer">
     <div class="container footer-flex">
       <div>
         <small>🧾 Cédula profesional | <a href="#">Términos de privacidad</a></small>
@@ -79,41 +76,6 @@
     const mainNav = document.getElementById('mainNav');
     navToggle.addEventListener('click', () => {
       mainNav.classList.toggle('open');
-    });
-
-    // Animación de fade-in al hacer scroll
-    function isInViewport(element) {
-      const rect = element.getBoundingClientRect();
-      return (
-        rect.top < window.innerHeight - 80
-      );
-    }
-    document.addEventListener('scroll', () => {
-      document.querySelectorAll('.fade-in').forEach(el => {
-        if (isInViewport(el)) el.classList.add('visible');
-      });
-      document.querySelectorAll('.img-animate').forEach(el => {
-        if (isInViewport(el)) el.classList.add('img-visible');
-      });
-    });
-
-    // Efecto de subrayado animado en el nav
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('mouseenter', () => link.classList.add('underline'));
-      link.addEventListener('mouseleave', () => link.classList.remove('underline'));
-    });
-
-    // Scroll to top
-    const toTopBtn = document.getElementById('toTopBtn');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 250) {
-        toTopBtn.style.display = 'block';
-      } else {
-        toTopBtn.style.display = 'none';
-      }
-    });
-    toTopBtn.addEventListener('click', () => {
-      window.scrollTo({top: 0, behavior: "smooth"});
     });
   </script>
 </body>
