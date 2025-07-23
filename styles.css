@@ -6,10 +6,9 @@
   --negro: #222;
   --sombra: 0 2px 8px rgba(26, 76, 125, 0.07);
   --transicion: .3s cubic-bezier(.4,0,.2,1);
+  --equipo-gradiente: linear-gradient(90deg, #A8CBB7 0%, #1A4C7D 100%);
 }
-body {
-  padding-top: 64px; /* O el alto real de tu header */
-}
+
 * { box-sizing: border-box; }
 
 body {
@@ -42,31 +41,38 @@ body {
 }
 .nav ul {
   display: flex; gap: 1.2em; list-style: none; margin: 0; padding: 0;
+  align-items: center;
 }
 .nav a {
   color: var(--blanco); text-decoration: none; font-weight: 700;
   letter-spacing: 0.02em; transition: color var(--transicion);
+  padding: 0.3em 0.7em;
+  border-radius: 2em;
 }
-.nav a:hover, .nav a:focus { color: var(--verde-salvia); }
+.nav a:hover, .nav a:focus { color: var(--verde-salvia); background: rgba(255,255,255,0.08);}
 .nav-toggle {
   display: none; background: none; border: none; color: var(--blanco); font-size: 1.7em;
 }
-
-/* Botón especial en el menú para "Forma parte de nuestro equipo" */
-.menu-btn-equipo {
+.btn-equipo {
   background: var(--verde-salvia);
-  color: var(--azul-profundo) !important;
-  border-radius: 22px;
-  padding: 0.5em 1.2em;
-  font-weight: bold;
-  margin-left: 0.8em;
-  transition: background .22s, color .22s;
+  color: var(--azul-profundo);
+  font-weight: 900;
+  border-radius: 2em;
+  padding: 0.3em 1em;
+  margin-left: 0.3em;
+  box-shadow: 0 2px 8px rgba(26, 76, 125, 0.09);
+  transition: background var(--transicion), color var(--transicion), box-shadow var(--transicion);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
   border: none;
-  font-family: inherit;
+  font-size: 1em;
 }
-.menu-btn-equipo:hover, .menu-btn-equipo.active {
+.btn-equipo:hover, .btn-equipo:focus {
   background: var(--azul-profundo);
-  color: var(--blanco) !important;
+  color: var(--verde-salvia);
+  box-shadow: 0 4px 16px rgba(26,76,125,0.13);
+  text-decoration: none;
 }
 
 @media (max-width: 900px) {
@@ -75,12 +81,6 @@ body {
   .nav { display: none; position: absolute; top: 60px; right: 1em; min-width: 170px; border-radius: 6px; box-shadow: var(--sombra); }
   .nav.open { display: block; }
   .nav-toggle { display: block; }
-  .menu-btn-equipo {
-    margin-left: 0;
-    margin-top: 0.7em;
-    width: 100%;
-    text-align: center;
-  }
 }
 
 .hero {
@@ -154,6 +154,11 @@ h4 { margin: 0.8em 0 0.3em 0; }
 .servicio-card {
   background: var(--blanco); box-shadow: var(--sombra);
   border-radius: 1em; padding: 1em 1.3em; text-align: center; flex: 1 1 150px; min-width: 140px;
+  transition: transform .2s, box-shadow .2s;
+}
+.servicio-card:hover, .servicio-card:focus {
+  transform: translateY(-5px) scale(1.04);
+  box-shadow: 0 6px 20px rgba(26,76,125,0.12);
 }
 .servicio-card i { font-size: 2em; color: var(--azul-profundo); margin-bottom: .2em; }
 .servicios-list { margin-top: 1.5em; }
@@ -203,8 +208,43 @@ h4 { margin: 0.8em 0 0.3em 0; }
 }
 .whatsapp-float:hover, .whatsapp-float:focus { background: #128C7E; color: #fff; }
 
+/* Sección invitación equipo */
+.equipo-invita {
+  background: var(--equipo-gradiente);
+  color: #fff;
+  padding: 2.5em 0 2em 0;
+}
+.equipo-invita h2 {
+  color: #fff;
+  font-size: 2em;
+}
+.equipo-invita p {
+  font-size: 1.15em;
+  margin-bottom: 1em;
+}
+.equipo-mensaje .btn-equipo {
+  font-size: 1.08em;
+  margin-top: 1em;
+  box-shadow: 0 2px 8px rgba(26,76,125,0.18);
+  background: #fff;
+  color: var(--azul-profundo);
+  border: 2px solid var(--verde-salvia);
+}
+.equipo-mensaje .btn-equipo:hover, .equipo-mensaje .btn-equipo:focus {
+  background: var(--azul-profundo);
+  color: #fff;
+  border: 2px solid #fff;
+}
+.equipo-mensaje img {
+  max-width: 280px;
+  background: #fff;
+  border-radius: 1em;
+  box-shadow: 0 2px 8px rgba(26,76,125,0.10);
+  margin-top: 1em;
+}
+
 @media (max-width: 700px) {
-  .hero-content, .section-flex, .footer-flex { flex-direction: column; gap: 1.2em; align-items: stretch;}
-  .hero-img img, .section-img img, .servicios-img img { max-width: 98vw; }
+  .hero-content, .section-flex, .footer-flex, .equipo-mensaje { flex-direction: column; gap: 1.2em; align-items: stretch;}
+  .hero-img img, .section-img img, .servicios-img img, .equipo-mensaje img { max-width: 98vw; }
   .footer-flex { flex-direction: column; }
 }
