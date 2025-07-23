@@ -5,42 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Clínica ARUC | Salud Mental Integral</title>
   <meta name="description" content="Clínica ARUC. Atención psicológica profesional, humana y personalizada en Toluca y en línea. Agenda tu cita.">
-  <!-- Google Fonts (combinado en una sola llamada) -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Encabezado fijo -->
-  <header>
-    <div class="container header-content">
+  <header class="header">
+    <div class="container header-flex">
       <div class="logo">
-        <img src="Captura de pantalla 2025-07-22 141023.png" alt="Logo Clínica ARUC" height="50">
+        <img src="logo-aruc.png" alt="Logo Clínica ARUC" height="48" />
+        <span>Clínica ARUC</span>
       </div>
-      <nav id="navbar">
+      <nav class="nav" id="mainNav">
         <ul>
           <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#mision-vision">Misión y Visión</a></li>
+          <li><a href="#mision">Misión y Visión</a></li>
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#agenda">Agenda</a></li>
           <li><a href="#contacto">Contacto</a></li>
-          <!-- NUEVO BOTÓN/APARTADO -->
           <li>
-            <a href="equipo.html" class="cta-btn menu-btn-equipo">
-              Forma parte de nuestro equipo
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe67jC87OWKpiGkDWc0A-mPgbfjGdvb5nJY_nZ1iBPeN0wFUg/viewform?usp=header"
+               class="btn-equipo"
+               target="_blank"
+               title="Forma parte de nuestro equipo">
+              <i class="fas fa-user-plus"></i> Forma parte de nuestro equipo
             </a>
           </li>
         </ul>
-        <button id="menu-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
       </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
   </header>
+
   <!-- Imagen principal -->
   <section class="hero" id="inicio">
     <div class="hero-content">
       <div class="hero-img">
-        <img src="Meditation-cuate.svg" alt="Espacio terapéutico cálido" />
+        <img src="hero-consultorio.jpg" alt="Espacio terapéutico cálido" />
       </div>
       <div class="hero-text">
         <h1>Un espacio para reconectar contigo</h1>
@@ -51,8 +58,29 @@
     </div>
   </section>
 
+  <!-- Nueva sección para invitar a profesionales -->
+  <section class="section equipo-invita">
+    <div class="container section-flex equipo-mensaje">
+      <div class="section-text">
+        <h2>¿Eres profesional de la salud mental?</h2>
+        <p>
+          Súmate a la plantilla de trabajo de Clínica ARUC. Buscamos psicólogos, terapeutas y especialistas comprometidos con el bienestar emocional y el crecimiento humano.
+          <br>Si deseas integrarte a nuestro equipo, llena el siguiente formulario y nos pondremos en contacto contigo:
+        </p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe67jC87OWKpiGkDWc0A-mPgbfjGdvb5nJY_nZ1iBPeN0wFUg/viewform?usp=header"
+           class="btn btn-equipo"
+           target="_blank">
+          <i class="fas fa-user-plus"></i> Forma parte de nuestro equipo
+        </a>
+      </div>
+      <div class="section-img" style="text-align:center;">
+        <img src="equipo-aruc.jpg" alt="Equipo profesional de salud mental" style="max-width:300px; border-radius:1em; box-shadow:0 2px 8px rgba(26,76,125,.09);" />
+      </div>
+    </div>
+  </section>
+
   <!-- Sección Misión y Visión -->
-  <section class="section" id="mision-vision">
+  <section class="section" id="mision">
     <div class="container section-flex">
       <div class="section-text">
         <h2>Misión y Visión</h2>
@@ -66,7 +94,7 @@
         </p>
       </div>
       <div class="section-img">
-        <img src="Psychologist-amico.svg" alt="Ilustración de conexión humana" />
+        <img src="conexion-humana.jpg" alt="Ilustración de conexión humana" />
       </div>
     </div>
   </section>
@@ -122,7 +150,7 @@
         </ul>
       </div>
       <div class="servicios-img">
-        <img src="Psychologist-bro.svg" alt="Sesión simbólica terapéutica" />
+        <img src="terapia-simbolica.jpg" alt="Sesión simbólica terapéutica" />
       </div>
     </div>
   </section>
@@ -135,7 +163,7 @@
         <p>
           Agenda tu sesión de manera fácil y rápida. Elige el horario que más te convenga, modalidad (presencial o en línea), y recibe confirmación automática en tu correo.
         </p>
-        <a href="https://calendly.com/mi-espacio-analitico/30min" 
+        <a href="https://calendly.com/tu_usuario/consulta" 
            class="btn btn-primary" target="_blank">Agendar mi cita ahora</a>
         <p style="margin-top:1em; color:#1A4C7D;"><b>¿Dudas o problemas para agendar?</b><br>
           Escríbenos directamente por WhatsApp: 
@@ -143,7 +171,7 @@
         </p>
       </div>
       <div class="section-img">
-        <img src="undraw_chat-with-ai_ir62.svg" alt="Persona agendando cita" />
+        <img src="agenda-persona.jpg" alt="Persona agendando cita" />
       </div>
     </div>
     <!-- Ejemplo de incrustar Calendly como iframe (opcional, puedes quitar si prefieres solo el botón) -->
@@ -200,10 +228,10 @@
 
   <script>
     // Menú colapsable para móviles
-    const menuToggle = document.getElementById('menu-toggle');
-    const navbar = document.getElementById('navbar').querySelector('ul');
-    menuToggle.addEventListener('click', () => {
-      navbar.classList.toggle('active');
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+    navToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('open');
     });
   </script>
 </body>
