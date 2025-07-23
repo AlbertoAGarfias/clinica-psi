@@ -5,38 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Clínica ARUC | Salud Mental Integral</title>
   <meta name="description" content="Clínica ARUC. Atención psicológica profesional, humana y personalizada en Toluca y en línea. Agenda tu cita.">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+  <!-- Google Fonts (combinado en una sola llamada) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Encabezado fijo -->
- <header>
-  <div class="container header-content">
-    <div class="logo">
-      <img src="Captura de pantalla 2025-07-22 141023.png" alt="Logo Clínica ARUC" height="50">
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <img src="Captura de pantalla 2025-07-22 141023.png" alt="Logo Clínica ARUC" height="50">
+      </div>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#mision-vision">Misión y Visión</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <!-- NUEVO BOTÓN/APARTADO -->
+          <li>
+            <a href="equipo.html" class="cta-btn menu-btn-equipo">
+              Forma parte de nuestro equipo
+            </a>
+          </li>
+        </ul>
+        <button id="menu-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+      </nav>
     </div>
-    <nav id="navbar">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#mision-vision">Misión y Visión</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#agenda">Agenda</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <!-- NUEVO BOTÓN/APARTADO -->
-        <li>
-          <a href="equipo.html" class="cta-btn menu-btn-equipo">
-            Forma parte de nuestro equipo
-          </a>
-        </li>
-      </ul>
-      <button id="menu-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
-    </nav>
-  </div>
-</header>
+  </header>
   <!-- Imagen principal -->
   <section class="hero" id="inicio">
     <div class="hero-content">
@@ -53,7 +52,7 @@
   </section>
 
   <!-- Sección Misión y Visión -->
-  <section class="section" id="mision">
+  <section class="section" id="mision-vision">
     <div class="container section-flex">
       <div class="section-text">
         <h2>Misión y Visión</h2>
@@ -201,10 +200,10 @@
 
   <script>
     // Menú colapsable para móviles
-    const navToggle = document.getElementById('navToggle');
-    const mainNav = document.getElementById('mainNav');
-    navToggle.addEventListener('click', () => {
-      mainNav.classList.toggle('open');
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbar = document.getElementById('navbar').querySelector('ul');
+    menuToggle.addEventListener('click', () => {
+      navbar.classList.toggle('active');
     });
   </script>
 </body>
